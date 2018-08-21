@@ -7,12 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "MyScene.h"
+#import "GameCenterUtil.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    /*
+    GameCenterUtil * gameCenterUtil = [GameCenterUtil sharedInstance];
+    [gameCenterUtil isGameCenterAvailable];
+    [gameCenterUtil authenticateLocalUser:[[[[UIApplication sharedApplication] keyWindow] subviews] lastObject]];
+    */
     return YES;
 }
 							
@@ -26,6 +34,15 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    //if(currentViewController==@"MyViewController")
+    //[(UINavigationController *)self.window.rootViewController presentedViewController]
+    
+    NSLog(@"%@", NSStringFromClass([self.window.rootViewController class]));
+    
+    //[self.window.rootViewController isKindOfClass:[UINavigationController class]]
+    
+    [MyScene setAllGameRun:NO];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -41,6 +58,12 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+void uncaughtExceptionHandler(NSException *exception) {
+    NSLog(@"CRASH: %@", exception);
+    NSLog(@"Stack Trace: %@", [exception callStackSymbols]);
+    // Internal error reporting
 }
 
 @end

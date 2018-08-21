@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Try_Cat_Shoot
+
+  Created by irons on 2015/6/11.
+  Copyright (c) 2015年 irons. All rights reserved.
+*/
+
+"START_NEW_GAME" = "新しいゲームを開始すると、ゲームの記録は削除されるです。新しいゲームを開始しますか？";
+"GAME_SAVE_AND_AD_REMOVE" = "ゲーム保存と広告削除(Add game save function and ad removed)";
+
+"MENU_BG" = "jp_menu_bg";

@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Try_Cat_Shoot
+
+  Created by irons on 2015/6/11.
+  Copyright (c) 2015年 irons. All rights reserved.
+*/
+
+"START_NEW_GAME" = "If you start new game, your game record would be clear. Would you like to start new game?";
+"GAME_SAVE_AND_AD_REMOVE" = "Add game save function and ad removed";
+
+"MENU_BG" = "en_menu_bg";
