@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		895DC88B0C30044030B9F8C3 /* Pods_Try_Cat_ShootTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65EB6CDA64385EDC7720150 /* Pods_Try_Cat_ShootTests.framework */; };
 		B50ACF9F1B82AB08003D6BF1 /* cn_menu_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B50ACF9C1B82AB08003D6BF1 /* cn_menu_bg.png */; };
 		B50ACFA01B82AB08003D6BF1 /* jp_menu_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B50ACF9D1B82AB08003D6BF1 /* jp_menu_bg.png */; };
 		B50ACFA11B82AB08003D6BF1 /* kr_menu_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B50ACF9E1B82AB08003D6BF1 /* kr_menu_bg.png */; };
@@ -28,9 +29,6 @@
 		B518B71D19D996EE0012E279 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B518B6F819D996EE0012E279 /* UIKit.framework */; };
 		B518B72519D996EE0012E279 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B518B72319D996EE0012E279 /* InfoPlist.strings */; };
 		B518B72719D996EE0012E279 /* Try_Cat_ShootTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B518B72619D996EE0012E279 /* Try_Cat_ShootTests.m */; };
-		B518B73519D99C7E0012E279 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = B518B73219D99C7E0012E279 /* background-music-aac.caf */; };
-		B518B73619D99C7E0012E279 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = B518B73319D99C7E0012E279 /* pew-pew-lei.caf */; };
-		B518B73719D99C7E0012E279 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B518B73419D99C7E0012E279 /* sprites.atlas */; };
 		B518B78F19E6A4C40012E279 /* Effect.m in Sources */ = {isa = PBXBuildFile; fileRef = B518B78E19E6A4C40012E279 /* Effect.m */; };
 		B518B79219E6A7590012E279 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = B518B79119E6A7590012E279 /* Tool.m */; };
 		B518B79519E6AB130012E279 /* Monster.m in Sources */ = {isa = PBXBuildFile; fileRef = B518B79419E6AB130012E279 /* Monster.m */; };
@@ -167,6 +165,9 @@
 		B59FA94E1AC2691A00206BE0 /* hand2.png in Resources */ = {isa = PBXBuildFile; fileRef = B59FA94C1AC2691A00206BE0 /* hand2.png */; };
 		B59FA94F1AC2691A00206BE0 /* hand3.png in Resources */ = {isa = PBXBuildFile; fileRef = B59FA94D1AC2691A00206BE0 /* hand3.png */; };
 		B5BCDE031B2AABB2007A6A82 /* fireball.png in Resources */ = {isa = PBXBuildFile; fileRef = B5BCDE021B2AABB1007A6A82 /* fireball.png */; };
+		B5C61525263C606F00CFDD98 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5C61521263C606F00CFDD98 /* sprites.atlas */; };
+		B5C61526263C606F00CFDD98 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = B5C61523263C606F00CFDD98 /* background-music-aac.caf */; };
+		B5C61527263C606F00CFDD98 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = B5C61524263C606F00CFDD98 /* pew-pew-lei.caf */; };
 		B5E58CE61ADCFDA7009385F0 /* SystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E58CE51ADCFDA7009385F0 /* SystemViewController.m */; };
 		B5E58CE91ADD0131009385F0 /* AuthorTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E58CE81ADD0131009385F0 /* AuthorTeamViewController.m */; };
 		B5E58D391ADE78EF009385F0 /* game_resume_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E58D381ADE78EF009385F0 /* game_resume_btn.png */; };
@@ -174,6 +175,7 @@
 		B5ECBDAD1B289067001C50E1 /* store2.png in Resources */ = {isa = PBXBuildFile; fileRef = B5ECBDAB1B289067001C50E1 /* store2.png */; };
 		B5ECBDB71B295D7D001C50E1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5ECBDB91B295D7D001C50E1 /* Localizable.strings */; };
 		B5ECBDC11B29EA10001C50E1 /* GameCenterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ECBDC01B29EA10001C50E1 /* GameCenterUtil.m */; };
+		F206DDAD6B17512D80B7B70F /* Pods_Try_Cat_Shoot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BE6046DF44CB470BB95396 /* Pods_Try_Cat_Shoot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +189,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24597B6ADE75E518235100D2 /* Pods-Try_Cat_ShootTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Try_Cat_ShootTests.release.xcconfig"; path = "Target Support Files/Pods-Try_Cat_ShootTests/Pods-Try_Cat_ShootTests.release.xcconfig"; sourceTree = "<group>"; };
+		27BE6046DF44CB470BB95396 /* Pods_Try_Cat_Shoot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Try_Cat_Shoot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		627B3593D285A894C797496B /* Pods-Try_Cat_Shoot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Try_Cat_Shoot.release.xcconfig"; path = "Target Support Files/Pods-Try_Cat_Shoot/Pods-Try_Cat_Shoot.release.xcconfig"; sourceTree = "<group>"; };
+		7B2D28C23D6CA2E74F3C05D7 /* Pods-Try_Cat_Shoot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Try_Cat_Shoot.debug.xcconfig"; path = "Target Support Files/Pods-Try_Cat_Shoot/Pods-Try_Cat_Shoot.debug.xcconfig"; sourceTree = "<group>"; };
 		B50ACF931B7F4074003D6BF1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B50ACF941B7F4074003D6BF1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B50ACF951B7F4074003D6BF1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -224,9 +230,6 @@
 		B518B72219D996EE0012E279 /* Try_Cat_ShootTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Try_Cat_ShootTests-Info.plist"; sourceTree = "<group>"; };
 		B518B72419D996EE0012E279 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B518B72619D996EE0012E279 /* Try_Cat_ShootTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Try_Cat_ShootTests.m; sourceTree = "<group>"; };
-		B518B73219D99C7E0012E279 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
-		B518B73319D99C7E0012E279 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
-		B518B73419D99C7E0012E279 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
 		B518B78D19E6A4C40012E279 /* Effect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Effect.h; sourceTree = "<group>"; };
 		B518B78E19E6A4C40012E279 /* Effect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Effect.m; sourceTree = "<group>"; };
 		B518B79019E6A7590012E279 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
@@ -383,6 +386,9 @@
 		B59FA94C1AC2691A00206BE0 /* hand2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand2.png; sourceTree = "<group>"; };
 		B59FA94D1AC2691A00206BE0 /* hand3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand3.png; sourceTree = "<group>"; };
 		B5BCDE021B2AABB1007A6A82 /* fireball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fireball.png; sourceTree = "<group>"; };
+		B5C61521263C606F00CFDD98 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		B5C61523263C606F00CFDD98 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		B5C61524263C606F00CFDD98 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
 		B5E58CE41ADCFDA7009385F0 /* SystemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemViewController.h; path = ../SystemViewController.h; sourceTree = "<group>"; };
 		B5E58CE51ADCFDA7009385F0 /* SystemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SystemViewController.m; path = ../SystemViewController.m; sourceTree = "<group>"; };
 		B5E58CE71ADD0131009385F0 /* AuthorTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorTeamViewController.h; sourceTree = "<group>"; };
@@ -394,6 +400,8 @@
 		B5ECBDBA1B295D80001C50E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B5ECBDBF1B29EA0F001C50E1 /* GameCenterUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterUtil.h; sourceTree = "<group>"; };
 		B5ECBDC01B29EA10001C50E1 /* GameCenterUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterUtil.m; sourceTree = "<group>"; };
+		C901BC3F631DC34E0A22FCE1 /* Pods-Try_Cat_ShootTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Try_Cat_ShootTests.debug.xcconfig"; path = "Target Support Files/Pods-Try_Cat_ShootTests/Pods-Try_Cat_ShootTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F65EB6CDA64385EDC7720150 /* Pods_Try_Cat_ShootTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Try_Cat_ShootTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +414,7 @@
 				B53E30331B146CDA00B7457E /* GoogleMobileAds.framework in Frameworks */,
 				B518B6FB19D996EE0012E279 /* SpriteKit.framework in Frameworks */,
 				B518B6F519D996EE0012E279 /* Foundation.framework in Frameworks */,
+				F206DDAD6B17512D80B7B70F /* Pods_Try_Cat_Shoot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +425,7 @@
 				B518B71B19D996EE0012E279 /* XCTest.framework in Frameworks */,
 				B518B71D19D996EE0012E279 /* UIKit.framework in Frameworks */,
 				B518B71C19D996EE0012E279 /* Foundation.framework in Frameworks */,
+				895DC88B0C30044030B9F8C3 /* Pods_Try_Cat_ShootTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,11 +436,12 @@
 			isa = PBXGroup;
 			children = (
 				B53E30321B146CDA00B7457E /* GoogleMobileAds.framework */,
-				B518B73019D99C7E0012E279 /* SpriteKitSimpleGameResources */,
+				B5C61520263C606F00CFDD98 /* SpriteKitSimpleGameResources */,
 				B518B6FC19D996EE0012E279 /* Try_Cat_Shoot */,
 				B518B72019D996EE0012E279 /* Try_Cat_ShootTests */,
 				B518B6F319D996EE0012E279 /* Frameworks */,
 				B518B6F219D996EE0012E279 /* Products */,
+				D19F1818956D7D0F0F1496B6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -451,6 +462,8 @@
 				B518B6F819D996EE0012E279 /* UIKit.framework */,
 				B518B6FA19D996EE0012E279 /* SpriteKit.framework */,
 				B518B71A19D996EE0012E279 /* XCTest.framework */,
+				27BE6046DF44CB470BB95396 /* Pods_Try_Cat_Shoot.framework */,
+				F65EB6CDA64385EDC7720150 /* Pods_Try_Cat_ShootTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -667,23 +680,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B518B73019D99C7E0012E279 /* SpriteKitSimpleGameResources */ = {
+		B5C61520263C606F00CFDD98 /* SpriteKitSimpleGameResources */ = {
 			isa = PBXGroup;
 			children = (
-				B518B73119D99C7E0012E279 /* Sounds */,
-				B518B73419D99C7E0012E279 /* sprites.atlas */,
+				B5C61521263C606F00CFDD98 /* sprites.atlas */,
+				B5C61522263C606F00CFDD98 /* Sounds */,
 			);
 			name = SpriteKitSimpleGameResources;
-			path = ../../Downloads/SpriteKitSimpleGameResources;
+			path = Try_Cat_Shoot/SpriteKitSimpleGameResources;
 			sourceTree = "<group>";
 		};
-		B518B73119D99C7E0012E279 /* Sounds */ = {
+		B5C61522263C606F00CFDD98 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				B518B73219D99C7E0012E279 /* background-music-aac.caf */,
-				B518B73319D99C7E0012E279 /* pew-pew-lei.caf */,
+				B5C61523263C606F00CFDD98 /* background-music-aac.caf */,
+				B5C61524263C606F00CFDD98 /* pew-pew-lei.caf */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		D19F1818956D7D0F0F1496B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B2D28C23D6CA2E74F3C05D7 /* Pods-Try_Cat_Shoot.debug.xcconfig */,
+				627B3593D285A894C797496B /* Pods-Try_Cat_Shoot.release.xcconfig */,
+				C901BC3F631DC34E0A22FCE1 /* Pods-Try_Cat_ShootTests.debug.xcconfig */,
+				24597B6ADE75E518235100D2 /* Pods-Try_Cat_ShootTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -693,9 +717,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B518B72A19D996EE0012E279 /* Build configuration list for PBXNativeTarget "Try_Cat_Shoot" */;
 			buildPhases = (
+				B8AED8282BD16BC05E708756 /* [CP] Check Pods Manifest.lock */,
 				B518B6ED19D996EE0012E279 /* Sources */,
 				B518B6EE19D996EE0012E279 /* Frameworks */,
 				B518B6EF19D996EE0012E279 /* Resources */,
+				5992E682ADFBEC185EDA7C02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -710,6 +736,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B518B72D19D996EE0012E279 /* Build configuration list for PBXNativeTarget "Try_Cat_ShootTests" */;
 			buildPhases = (
+				330D8432B442D73DDC2D47CA /* [CP] Check Pods Manifest.lock */,
 				B518B71519D996EE0012E279 /* Sources */,
 				B518B71619D996EE0012E279 /* Frameworks */,
 				B518B71719D996EE0012E279 /* Resources */,
@@ -735,8 +762,11 @@
 				TargetAttributes = {
 					B518B6F019D996EE0012E279 = {
 						DevelopmentTeam = T6VV6T753H;
+						ProvisioningStyle = Automatic;
 					};
 					B518B71819D996EE0012E279 = {
+						DevelopmentTeam = T6VV6T753H;
+						ProvisioningStyle = Automatic;
 						TestTargetID = B518B6F019D996EE0012E279;
 					};
 				};
@@ -746,6 +776,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hant",
@@ -769,6 +800,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C61525263C606F00CFDD98 /* sprites.atlas in Resources */,
 				B59FA92A1AC0E49500206BE0 /* hp.png in Resources */,
 				B59FA9451AC2460800206BE0 /* tool3_2.png in Resources */,
 				B59FA92D1AC0E54300206BE0 /* control_point.png in Resources */,
@@ -779,6 +811,7 @@
 				B51B168E1B2FF5F8004C896F /* h3.png in Resources */,
 				B54226961AC3C033008CF306 /* cat04_4.png in Resources */,
 				B52115F21B3FBCC3005EFD4A /* game_continue_btn02.png in Resources */,
+				B5C61527263C606F00CFDD98 /* pew-pew-lei.caf in Resources */,
 				B54226D01ACC0E0B008CF306 /* bg09.jpg in Resources */,
 				B50ACFA01B82AB08003D6BF1 /* jp_menu_bg.png in Resources */,
 				B54226D61ACC0E0B008CF306 /* bg15.jpg in Resources */,
@@ -793,11 +826,9 @@
 				B52115ED1B3FBCB8005EFD4A /* exit_btn01.png in Resources */,
 				B52115DA1B3FB5F9005EFD4A /* en_exit_btn02.png.png in Resources */,
 				B54226CB1ACC0E0B008CF306 /* bg04.jpg in Resources */,
-				B518B73719D99C7E0012E279 /* sprites.atlas in Resources */,
 				B54226D31ACC0E0B008CF306 /* bg12.jpg in Resources */,
 				B52115D41B3FB5F9005EFD4A /* en_restart_btn02png.png in Resources */,
 				B52115D81B3FB5F9005EFD4A /* en_continue_btn02png.png in Resources */,
-				B518B73519D99C7E0012E279 /* background-music-aac.caf in Resources */,
 				B54226DA1ACC0E0B008CF306 /* menu_bg.jpg in Resources */,
 				B59FA9401AC2460800206BE0 /* tool1_1.png in Resources */,
 				B52115D51B3FB5F9005EFD4A /* en_team_btn01png.png in Resources */,
@@ -843,7 +874,6 @@
 				B542270E1ACC0F26008CF306 /* icon.png in Resources */,
 				B54226EB1ACC0E57008CF306 /* s5.png in Resources */,
 				B54226F01ACC0E57008CF306 /* start.png in Resources */,
-				B518B73619D99C7E0012E279 /* pew-pew-lei.caf in Resources */,
 				B542269B1AC3C040008CF306 /* cat05_1.png in Resources */,
 				B54226E61ACC0E57008CF306 /* s0.png in Resources */,
 				B52115D71B3FB5F9005EFD4A /* en_continue_btn01png.png in Resources */,
@@ -878,6 +908,7 @@
 				B55A64551B7EED8E00280B92 /* deformation.mp3 in Resources */,
 				B52115FE1B3FBCFD005EFD4A /* system_btn02.png in Resources */,
 				B55A64531B7EED8E00280B92 /* biai.mp3 in Resources */,
+				B5C61526263C606F00CFDD98 /* background-music-aac.caf in Resources */,
 				B52115E91B3FBC78005EFD4A /* author_team_btn01.png in Resources */,
 				B54226841AC3C01B008CF306 /* cat02_2.png in Resources */,
 				B54226E81ACC0E57008CF306 /* s2.png in Resources */,
@@ -914,6 +945,73 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		330D8432B442D73DDC2D47CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Try_Cat_ShootTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5992E682ADFBEC185EDA7C02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Try_Cat_Shoot/Pods-Try_Cat_Shoot-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Try_Cat_Shoot/Pods-Try_Cat_Shoot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8AED8282BD16BC05E708756 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Try_Cat_Shoot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B518B6ED19D996EE0012E279 /* Sources */ = {
@@ -1091,10 +1189,13 @@
 		};
 		B518B72B19D996EE0012E279 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2D28C23D6CA2E74F3C05D7 /* Pods-Try_Cat_Shoot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6VV6T753H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1104,6 +1205,7 @@
 				INFOPLIST_FILE = "Try_Cat_Shoot/Try_Cat_Shoot-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fe6ce0bf-67f8-438e-a525-0d710c0449af";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1111,10 +1213,13 @@
 		};
 		B518B72C19D996EE0012E279 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 627B3593D285A894C797496B /* Pods-Try_Cat_Shoot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6VV6T753H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1124,6 +1229,7 @@
 				INFOPLIST_FILE = "Try_Cat_Shoot/Try_Cat_Shoot-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fe6ce0bf-67f8-438e-a525-0d710c0449af";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1131,8 +1237,13 @@
 		};
 		B518B72E19D996EE0012E279 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C901BC3F631DC34E0A22FCE1 /* Pods-Try_Cat_ShootTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Try_Cat_Shoot.app/Try_Cat_Shoot";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6VV6T753H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1146,6 +1257,8 @@
 				);
 				INFOPLIST_FILE = "Try_Cat_ShootTests/Try_Cat_ShootTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1153,8 +1266,13 @@
 		};
 		B518B72F19D996EE0012E279 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24597B6ADE75E518235100D2 /* Pods-Try_Cat_ShootTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Try_Cat_Shoot.app/Try_Cat_Shoot";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6VV6T753H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1164,6 +1282,8 @@
 				GCC_PREFIX_HEADER = "Try_Cat_Shoot/Try_Cat_Shoot-Prefix.pch";
 				INFOPLIST_FILE = "Try_Cat_ShootTests/Try_Cat_ShootTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
