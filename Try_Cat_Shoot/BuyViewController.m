@@ -36,17 +36,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-
 #define kRemoveAdsProductIdentifier @"com.irons.infinity.AttackOnGiantCat.RemoveAds"
 
 const int click5000btn = 0;
@@ -61,40 +50,34 @@ const int click850000btn = 5;
     
     currentClick = click5000btn;
     
-    if([SKPaymentQueue canMakePayments]){
+    if ([SKPaymentQueue canMakePayments]) {
         NSLog(@"User can make payments");
-        
-//        [self restore];
         
         SKProductsRequest *productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:[NSSet setWithObject:kRemoveAdsProductIdentifier]];
         productsRequest.delegate = self;
         [productsRequest start];
         
-    }
-    else{
+    } else {
         NSLog(@"User cannot make payments due to parental controls");
-        //this is called the user cannot make payments, most likely due to parental controls
     }
 }
 
 - (IBAction)backBtn:(id)sender {
     [self dismissViewControllerAnimated:false
                              completion:^{
-                                 
-                             }];
+        
+    }];
 }
 
 - (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response{
     SKProduct *validProduct = nil;
     int count = [response.products count];
-    if(count > 0){
+    if (count > 0) {
         validProduct = [response.products objectAtIndex:0];
         NSLog(@"Products Available!");
         [self purchase:validProduct];
-    }
-    else if(!validProduct){
+    } else if(!validProduct) {
         NSLog(@"No products available");
-        //this is called if your product id is not valid, this shouldn't be called unless that happens.
     }
 }
 
@@ -110,44 +93,24 @@ const int click850000btn = 5;
     [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
 }
 
--(void)paymentQueue:(SKPaymentQueue *)queue restoreCompletedTransactionsFailedWithError:(NSError *)error{
+- (void)paymentQueue:(SKPaymentQueue *)queue restoreCompletedTransactionsFailedWithError:(NSError *)error {
     NSLog(@"received fial restored transactions: %i", queue.transactions.count);
     
 }
 
-- (void) paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue
-{
+- (void)paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue {
     NSLog(@"received restored transactions: %i", queue.transactions.count);
-
-        for(SKPaymentTransaction *transaction in queue.transactions){
-            if(transaction.transactionState == SKPaymentTransactionStateRestored){
-                //called when the user successfully restores a purchase
-                NSLog(@"Transaction state -> Restored");
-                
-                [self doRemoveAds];
-                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
-                break;
-            }
+    
+    for(SKPaymentTransaction *transaction in queue.transactions){
+        if(transaction.transactionState == SKPaymentTransactionStateRestored){
+            //called when the user successfully restores a purchase
+            NSLog(@"Transaction state -> Restored");
+            
+            [self doRemoveAds];
+            [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+            break;
         }
-        
-        
-//        NSString * str = nil;
-//        if (currentClick==click5000btn) {
-//            str = k5000RemoveAdsProductIdentifier;
-//        }else if(currentClick==click30000btn){
-//            str = k5000RemoveAdsProductIdentifier;
-//        }else if(currentClick==click30000btn){
-//            str = k5000RemoveAdsProductIdentifier;
-//        }else if(currentClick==click30000btn){
-//            str = k5000RemoveAdsProductIdentifier;
-//        }else if(currentClick==click30000btn){
-//            str = k5000RemoveAdsProductIdentifier;
-//        }else if(currentClick==click30000btn){
-//            str = k5000RemoveAdsProductIdentifier;
-//        }
-//        SKProductsRequest *productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:[NSSet setWithObject:str]];
-//        productsRequest.delegate = self;
-//        [productsRequest start];
+    }
     
 }
 
@@ -180,18 +143,11 @@ const int click850000btn = 5;
     }
 }
 
-- (void)doRemoveAds{
-//    ADBannerView *banner;
-//    [banner setAlpha:0];
-    
+- (void)doRemoveAds {
     [self.viewController removeAd];
     
     areAdsRemoved = YES;
-//    removeAdsButton.hidden = YES;
-//    removeAdsButton.enabled = NO;
-//    self.restoreBtn.hidden = YES;
-//    self.restoreBtn.enabled = NO;
-    
+
     [[NSUserDefaults standardUserDefaults] setBool:areAdsRemoved forKey:@"areAdsRemoved"];
     //use NSUserDefaults so that you can load whether or not they bought it
     //it would be better to use KeyChain access, or something more secure

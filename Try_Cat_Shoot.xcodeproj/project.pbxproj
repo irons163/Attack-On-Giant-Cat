@@ -85,7 +85,6 @@
 		B542269E1AC3C040008CF306 /* cat05_4.png in Resources */ = {isa = PBXBuildFile; fileRef = B542269A1AC3C040008CF306 /* cat05_4.png */; };
 		B54226A11AC3D04A008CF306 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = B54226A01AC3D04A008CF306 /* Cat.m */; };
 		B54226A41AC3D33C008CF306 /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = B54226A31AC3D33C008CF306 /* Bullet.m */; };
-		B54226A71ACB2BEC008CF306 /* SelectCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54226A61ACB2BEC008CF306 /* SelectCarViewController.m */; };
 		B54226AA1ACB2C13008CF306 /* SelectLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54226A91ACB2C13008CF306 /* SelectLevelViewController.m */; };
 		B54226AD1ACB9C01008CF306 /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B54226AC1ACB9C01008CF306 /* MenuScene.m */; };
 		B54226B01ACBB942008CF306 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54226AF1ACBB942008CF306 /* MenuViewController.m */; };
@@ -295,8 +294,6 @@
 		B54226A01AC3D04A008CF306 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		B54226A21AC3D33C008CF306 /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
 		B54226A31AC3D33C008CF306 /* Bullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bullet.m; sourceTree = "<group>"; };
-		B54226A51ACB2BEC008CF306 /* SelectCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectCarViewController.h; sourceTree = "<group>"; };
-		B54226A61ACB2BEC008CF306 /* SelectCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectCarViewController.m; sourceTree = "<group>"; };
 		B54226A81ACB2C13008CF306 /* SelectLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectLevelViewController.h; sourceTree = "<group>"; };
 		B54226A91ACB2C13008CF306 /* SelectLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectLevelViewController.m; sourceTree = "<group>"; };
 		B54226AB1ACB9C01008CF306 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
@@ -615,8 +612,6 @@
 				B57AF9AE1B26DDBE00979D53 /* Reachability.h */,
 				B57AF9AF1B26DDBE00979D53 /* Reachability.m */,
 				B518B70819D996EE0012E279 /* Main.storyboard */,
-				B54226A51ACB2BEC008CF306 /* SelectCarViewController.h */,
-				B54226A61ACB2BEC008CF306 /* SelectCarViewController.m */,
 				B54226A81ACB2C13008CF306 /* SelectLevelViewController.h */,
 				B54226A91ACB2C13008CF306 /* SelectLevelViewController.m */,
 				B518B70B19D996EE0012E279 /* ViewController.h */,
@@ -1041,7 +1036,6 @@
 				B54226B01ACBB942008CF306 /* MenuViewController.m in Sources */,
 				B54226AD1ACB9C01008CF306 /* MenuScene.m in Sources */,
 				B57AF9A71B26919800979D53 /* GameHintViewController.m in Sources */,
-				B54226A71ACB2BEC008CF306 /* SelectCarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1195,6 +1189,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.2105010;
 				DEVELOPMENT_TEAM = T6VV6T753H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1203,6 +1198,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Try_Cat_Shoot/Try_Cat_Shoot-Prefix.pch";
 				INFOPLIST_FILE = "Try_Cat_Shoot/Try_Cat_Shoot-Info.plist";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fe6ce0bf-67f8-438e-a525-0d710c0449af";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1219,6 +1215,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.2105010;
 				DEVELOPMENT_TEAM = T6VV6T753H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1227,6 +1224,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Try_Cat_Shoot/Try_Cat_Shoot-Prefix.pch";
 				INFOPLIST_FILE = "Try_Cat_Shoot/Try_Cat_Shoot-Info.plist";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fe6ce0bf-67f8-438e-a525-0d710c0449af";
 				PROVISIONING_PROFILE_SPECIFIER = "";

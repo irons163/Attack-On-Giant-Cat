@@ -27,7 +27,7 @@
 
 + (id)sharedInstance;
 
-+(void)resetGameRecoder:(CommonUtil*)commonUtil;
-+(NSString *)timeFormatted:(int)totalSeconds;
++ (void)resetGameRecoder:(CommonUtil *)commonUtil;
++ (NSString *)timeFormatted:(int)totalSeconds;
 
 @end

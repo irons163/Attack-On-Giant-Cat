@@ -13,56 +13,35 @@
 #import "GameCenterUtil.h"
 #import "GameSuccessViewController.h"
 
-@implementation ViewController{
-    ADBannerView * adBannerView;
+@implementation ViewController {
     GADInterstitial *interstitial;
-    CommonUtil * commonUtil;
+    CommonUtil *commonUtil;
 }
 
-MyScene * scene;
+MyScene *scene;
 bool isGoToFirstGameLevel = false;
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     commonUtil = [CommonUtil sharedInstance];
     
-    bool areAdsRemoved = [[NSUserDefaults standardUserDefaults] boolForKey:@"areAdsRemoved"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
     //this will load wether or not they bought the in-app purchase
-    
-    if(commonUtil.isPurchased){
-//        [self.view setBackgroundColor:[UIColor blueColor]];
-        //if they did buy it, set the background to blue, if your using the code above to set the background to blue, if your removing ads, your going to have to make your own code here
-    }else{
-        adBannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, -50, 200, 30)];
-        adBannerView.delegate = self;
-        adBannerView.alpha = 1.0f;
-        [self.view addSubview:adBannerView];
+    if (commonUtil.isPurchased) {
+        // NO AD
+    } else {
+        // AD
     }
     
     NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
     
     interstitial = [self createAndLoadInterstitial];
     
-    // Configure the view.
     SKView * skView = (SKView *)self.view;
-//    skView.showsFPS = YES;
-//    skView.showsNodeCount = YES;
-    
-    // Create and configure the scene.
     scene = [MyScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    // Present the scene.
     [skView presentScene:scene];
-    
-    //scene->game(YES);
-//    scene.game(YES);
-    
     scene.delegate = self;
-    
     scene.onGameEnd2 = ^(bool didWin){
         [self gameOverWithWin:didWin];
     };
@@ -96,34 +75,28 @@ bool isGoToFirstGameLevel = false;
         [self gameWin:gameLevel withGameTime:gameTime withClearedHands:clearedHands];
     };
     
-    if(commonUtil.isPurchased && commonUtil.recordGameLevel>0){
+    if (commonUtil.isPurchased && commonUtil.recordGameLevel > 0) {
         [scene gameContinue:commonUtil.recordGameLevel];
-    }else{
+    } else {
         [scene gameStart];
     }
     
-    GameCenterUtil * gameCenterUtil = [GameCenterUtil sharedInstance];
+    GameCenterUtil *gameCenterUtil = [GameCenterUtil sharedInstance];
     gameCenterUtil.delegate = self;
     [gameCenterUtil isGameCenterAvailable];
     [gameCenterUtil authenticateLocalUser:self];
     [gameCenterUtil submitAllSavedScores];
-    
-//    scene.game;
-//    [scene game];
-    
 }
 
--(void)pauseGame{
+- (void)pauseGame {
     [MyScene setAllGameRun:NO];
 }
 
-- (BOOL)shouldAutorotate
-{
+- (BOOL)shouldAutorotate {
     return YES;
 }
 
-- (NSUInteger)supportedInterfaceOrientations
-{
+- (NSUInteger)supportedInterfaceOrientations {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         return UIInterfaceOrientationMaskAllButUpsideDown;
     } else {
@@ -131,66 +104,31 @@ bool isGoToFirstGameLevel = false;
     }
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
-
--(void)goBackalertss: UIAlertControlleraler {
-
-    [self dismissViewControllerAnimated:true completion:^{
-        
-    }];
-    [self.navigationController popToRootViewControllerAnimated:false];
-}
-
--(void) gameOverWithWin:(bool ) didWin{
+- (void)gameOverWithWin:(bool)didWin {
     UIAlertView *alert = [UIAlertView new];
     alert.title = didWin ? @"You won!": @"You lost";
     alert.message = @"Game Over";
     [alert show];
-    
-//    [self presentViewController:alert animated:true completion:^{
-//        
-//    }];
-    
-//    (title: didWin ? "You won!": "You lost", message: "Game Over", preferredStyle: .Alert)
-//    presentViewController(alert, animated: true, completion: nil);
 }
 
--(void) gameOverWithLose:(int)gameLevel withGameTime:(int)gameTime withClearedHands:(int)clearedHands{
+- (void)gameOverWithLose:(int)gameLevel withGameTime:(int)gameTime withClearedHands:(int)clearedHands {
     GameOverViewController* gameOverDialogViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"GameOverViewController"];
     gameOverDialogViewController.delegate = self;
-    
-//    gameOverDialogViewController.gameLevelTensDigitalLabel = time;
-    
     gameOverDialogViewController.gameLevel = gameLevel;
-    
     gameOverDialogViewController.gameTime = gameTime;
-    
     gameOverDialogViewController.clearedHands = clearedHands;
-    
-//    [self.navigationController popToViewController:gameOverDialogViewController animated:YES];
-    
-//    [self.delegate BviewcontrollerDidTapButton:self];
     
     self.navigationController.providesPresentationContextTransitionStyle = YES;
     self.navigationController.definesPresentationContext = YES;
     [gameOverDialogViewController setModalPresentationStyle:UIModalPresentationOverCurrentContext];
     
-    
-    /* //before ios8
-    self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
-    */
-    
     [self.navigationController presentViewController:gameOverDialogViewController animated:YES completion:^{
-//        [reset];
+        
     }];
 }
 
--(void) gameWin:(int)gameLevel withGameTime:(int)gameTime withClearedHands:(int)clearedHands{
-    GameSuccessViewController* gameWinDialogViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"GameSuccessViewController"];
+- (void)gameWin:(int)gameLevel withGameTime:(int)gameTime withClearedHands:(int)clearedHands {
+    GameSuccessViewController *gameWinDialogViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"GameSuccessViewController"];
     gameWinDialogViewController.gameTime = gameTime;
     gameWinDialogViewController.clearedHands = clearedHands;
     
@@ -198,60 +136,50 @@ bool isGoToFirstGameLevel = false;
     self.navigationController.definesPresentationContext = YES;
     [gameWinDialogViewController setModalPresentationStyle:UIModalPresentationOverCurrentContext];
     
-    
-    /* //before ios8
-     self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
-     */
-    
     [self.navigationController presentViewController:gameWinDialogViewController animated:YES completion:^{
     }];
 }
 
--(void) gameHint:(NSString*)gameHintID{
-    GameHintViewController* gameHintDialogViewController = [self.storyboard instantiateViewControllerWithIdentifier:gameHintID];
+- (void)gameHint:(NSString*)gameHintID {
+    GameHintViewController *gameHintDialogViewController = [self.storyboard instantiateViewControllerWithIdentifier:gameHintID];
     gameHintDialogViewController.delegate = self;
     
     self.navigationController.providesPresentationContextTransitionStyle = YES;
     self.navigationController.definesPresentationContext = YES;
     [gameHintDialogViewController setModalPresentationStyle:UIModalPresentationOverCurrentContext];
     
-    
-    /* //before ios8
-     self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
-     */
-    
     [self.navigationController presentViewController:gameHintDialogViewController animated:YES completion:^{
-        //        [reset];
+
     }];
 }
 
--(void)BviewcontrollerDidTapButton{
-//    [scene resetGame];
+- (void)BviewcontrollerDidTapButton {
     isGoToFirstGameLevel = true;
-    if(commonUtil.isPurchased){
+    
+    if (commonUtil.isPurchased) {
         [scene gameContinue:commonUtil.recordGameLevel];
-    }else{
-        if([self showAdmob]){
-           
-        }else{
+    } else {
+        if ([self showAdmob]) {
+            
+        } else {
             [scene resetGameToFirstLevel];
         }
     }
 }
 
--(void)BviewcontrollerDidTapBackToMenuButton{
-    SKView * skView = (SKView *)self.view;
+- (void)BviewcontrollerDidTapBackToMenuButton {
+    SKView *skView = (SKView *)self.view;
     [scene destroy];
     scene = nil;
     [skView presentScene:nil];
     [self.navigationController popViewControllerAnimated:TRUE];
 }
 
--(void)GameHintDismissTouch{
+- (void)GameHintDismissTouch {
     [scene gameStartAfterGameHintDismiss];
 }
 
--(void) showBuyViewController{
+- (void)showBuyViewController {
     BuyViewController* buyViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BuyViewController"];
     buyViewController.viewController = self;
     self.navigationController.providesPresentationContextTransitionStyle = YES;
@@ -262,67 +190,26 @@ bool isGoToFirstGameLevel = false;
     }];
 }
 
--(void) showRankViewController{
-    GameCenterUtil * gameCenterUtil = [GameCenterUtil sharedInstance];
+- (void)showRankViewController {
+    GameCenterUtil *gameCenterUtil = [GameCenterUtil sharedInstance];
     gameCenterUtil.delegate = self;
     [gameCenterUtil isGameCenterAvailable];
-//    [gameCenterUtil authenticateLocalUser:self];
     [gameCenterUtil showGameCenter:self];
     [gameCenterUtil submitAllSavedScores];
 }
 
--(BOOL)showAdmob{
-    if(commonUtil.isPurchased){
+- (BOOL)showAdmob {
+    if (commonUtil.isPurchased) {
         return false;
     }
     
     if ([interstitial isReady]) {
         [interstitial presentFromRootViewController:self];
         return true;
-    }else{
+    } else {
         self->interstitial = [self createAndLoadInterstitial];
         return false;
     }
-}
-
--(void)bannerViewDidLoadAd:(ADBannerView *)banner{
-    [self layoutAnimated:true];
-}
-
--(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error{
-    //    [adBannerView removeFromSuperview];
-    //    adBannerView.delegate = nil;
-    //    adBannerView = nil;
-    [self layoutAnimated:true];
-}
-
--(BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave{
-    [MyScene setAllGameRun:NO];
-    return true;
-}
-
-- (void)layoutAnimated:(BOOL)animated
-{
-//    CGRect contentFrame = self.view.bounds;
-    
-    CGRect contentFrame = self.view.bounds;
-//    contentFrame.origin.y = -50;
-    CGRect bannerFrame = adBannerView.frame;
-    if (adBannerView.bannerLoaded)
-    {
-        //        contentFrame.size.height -= adBannerView.frame.size.height;
-        contentFrame.size.height = 0;
-        bannerFrame.origin.y = contentFrame.size.height;
-    } else {
-//        bannerFrame.origin.y = contentFrame.size.height;
-        bannerFrame.origin.y = -50;
-    }
-    
-    [UIView animateWithDuration:animated ? 0.25 : 0.0 animations:^{
-        adBannerView.frame = contentFrame;
-        [adBannerView layoutIfNeeded];
-        adBannerView.frame = bannerFrame;
-    }];
 }
 
 - (GADInterstitial *)createAndLoadInterstitial {
@@ -336,16 +223,15 @@ bool isGoToFirstGameLevel = false;
 - (void)interstitialDidDismissScreen:(GADInterstitial *)interstitial {
     self->interstitial = [self createAndLoadInterstitial];
     
-    if(isGoToFirstGameLevel){
+    if (isGoToFirstGameLevel) {
         [scene resetGameToFirstLevel];
-    }else{
+    } else {
         [scene resetGameToNext];
     }
-    
 }
 
--(void)removeAd{
-    [adBannerView setAlpha:0];
+- (void)removeAd {
+    // Remove AD
 }
 
 @end

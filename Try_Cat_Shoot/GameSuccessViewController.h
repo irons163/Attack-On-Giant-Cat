@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface GameSuccessViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet UILabel *gameTimeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *clearedHandsLabel;
+
 - (IBAction)backBtnClick:(id)sender;
 
 @property int gameTime;
 @property int clearedHands;
-
-//@property (nonatomic, weak) id <BviewControllerDelegate> delegate;
 
 @end

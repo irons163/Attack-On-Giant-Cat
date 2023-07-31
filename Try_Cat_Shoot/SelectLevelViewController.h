@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SelectLevelViewController : UIViewController<UIAlertViewDelegate>
+
 @property (strong, nonatomic) IBOutlet UIButton *continueBtn;
 @property (strong, nonatomic) IBOutlet UIImageView *menuBgImage;
 
@@ -16,4 +17,5 @@
 - (IBAction)systemClick:(id)sender;
 - (IBAction)exitClick:(id)sender;
 - (IBAction)continueClick:(id)sender;
+
 @end

@@ -12,8 +12,10 @@
 //@class BviewControllerDelegate;
 
 @protocol BviewControllerDelegate <NSObject>
+
 - (void)BviewcontrollerDidTapButton;
 - (void)BviewcontrollerDidTapBackToMenuButton;
+
 @end
 
 @interface GameOverViewController : UIViewController
@@ -34,8 +36,6 @@
 - (IBAction)restartGameClick:(id)sender;
 - (IBAction)backToMainMenuClick:(id)sender;
 
-@property (nonatomic, weak) id <BviewControllerDelegate> delegate;
-
-//@property (nonatomic, weak) ViewController* viewController;
+@property (nonatomic, weak) id<BviewControllerDelegate> delegate;
 
 @end

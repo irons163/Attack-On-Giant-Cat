@@ -611,7 +611,7 @@
             startingLineNumber = "2387"
             endingLineNumber = "2387"
             landmarkName = "-projectile:didCollideWithMonster:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -662,7 +662,7 @@
             startingLineNumber = "1939"
             endingLineNumber = "1939"
             landmarkName = "-addMonsterWithHitCount:position:dir:monster:isBelowHitCount:isNoTool:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -685,23 +685,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B2EF6603-A537-4B09-8685-D8B7DBB35C4F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/SelectCarViewController.m"
-            timestampString = "449541720.03378"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "-carButtonPressed:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "EDDE919E-8B23-478D-86E4-8B81C247AEE4"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -713,126 +696,7 @@
             startingLineNumber = "1444"
             endingLineNumber = "1444"
             landmarkName = "-shoot"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "378020CB-FAEB-463A-B63B-DBB2BFA5995D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GameOverViewController.m"
-            timestampString = "456208683.104111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "-restartGameClick:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  uuid = "378020CB-FAEB-463A-B63B-DBB2BFA5995D - b5e6dfa6b4a9adc2"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[GameOverViewController restartGameClick:]"
-                  moduleName = "Try_Cat_Shoot"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/irons/Desktop/Try_Cat_Shoot%202/GameOverViewController.m"
-                  timestampString = "455607226.959311"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  uuid = "378020CB-FAEB-463A-B63B-DBB2BFA5995D - 9f96d7c706b42b49"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__43-[GameOverViewController restartGameClick:]_block_invoke"
-                  moduleName = "Try_Cat_Shoot"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/irons/Desktop/Try_Cat_Shoot%202/GameOverViewController.m"
-                  timestampString = "455607226.961049"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EA28678E-675F-47BC-9176-430179F2DAEC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/ViewController.m"
-            timestampString = "458790376.533466"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
-            landmarkName = "-gameOverWithLose:withGameTime:withClearedHands:"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "69C27FF4-0A56-4055-B48B-0EC226E83533"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GameOverViewController.m"
-            timestampString = "450662830.820815"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "@interface GameOverViewController()"
-            landmarkType = "2">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2292D3A8-F475-421B-A28D-284598B537A0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GameOverViewController.m"
-            timestampString = "456208683.104111"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "-restartGameClick:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "33DE95A6-194E-4A74-B97F-ABC39B45AD39"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GameOverViewController.m"
-            timestampString = "450662830.820815"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -848,25 +712,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3232"
             endingLineNumber = "3232"
-            landmarkName = "@implementation MyScene"
+            landmarkName = "MyScene"
             landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7149E9ED-45AE-40D5-9A13-9E505816EE2E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/AppDelegate.m"
-            timestampString = "456112979.280469"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "-applicationDidEnterBackground:"
-            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -882,7 +729,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2153"
             endingLineNumber = "2153"
-            landmarkName = "@implementation MyScene"
+            landmarkName = "MyScene"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -900,7 +747,7 @@
             startingLineNumber = "2717"
             endingLineNumber = "2717"
             landmarkName = "-hamsterInjureTime:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -933,7 +780,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2873"
             endingLineNumber = "2873"
-            landmarkName = "@implementation MyScene"
+            landmarkName = "MyScene"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -950,7 +797,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3248"
             endingLineNumber = "3248"
-            landmarkName = "@implementation MyScene"
+            landmarkName = "MyScene"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -968,7 +815,7 @@
             startingLineNumber = "2698"
             endingLineNumber = "2698"
             landmarkName = "-humster:didhumsterCollideWithTool:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -984,7 +831,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3240"
             endingLineNumber = "3240"
-            landmarkName = "@implementation MyScene"
+            landmarkName = "MyScene"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1001,7 +848,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3261"
             endingLineNumber = "3261"
-            landmarkName = "@implementation MyScene"
+            landmarkName = "MyScene"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1036,7 +883,7 @@
             startingLineNumber = "2514"
             endingLineNumber = "2514"
             landmarkName = "-projectile:didCollideWithMonster:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1053,7 +900,7 @@
             startingLineNumber = "2738"
             endingLineNumber = "2738"
             landmarkName = "-hamsterInvincebleEnd:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1070,23 +917,6 @@
             startingLineNumber = "2746"
             endingLineNumber = "2746"
             landmarkName = "-didBeginContact:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B0B182D9-5B29-4DE6-A854-9F77488A9A99"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/ViewController.m"
-            timestampString = "458790376.533466"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
-            landmarkName = "-gameHint:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1104,41 +934,7 @@
             startingLineNumber = "3109"
             endingLineNumber = "3109"
             landmarkName = "-checkShowGameHintAndStartGame"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A8D3B9D5-FD53-4A7F-9702-4491684ECB64"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/ViewController.m"
-            timestampString = "458790376.533466"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "-viewDidLoad"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AF1AAC93-A768-4FEF-BDB5-640B4678F45C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/GameHintViewController.m"
-            timestampString = "455523197.050548"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "-touchesBegan:withEvent:"
-            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1155,7 +951,7 @@
             startingLineNumber = "1747"
             endingLineNumber = "1747"
             landmarkName = "-touchesBegan:withEvent:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1172,7 +968,7 @@
             startingLineNumber = "1759"
             endingLineNumber = "1759"
             landmarkName = "-touchesBegan:withEvent:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1189,7 +985,7 @@
             startingLineNumber = "1772"
             endingLineNumber = "1772"
             landmarkName = "-touchesBegan:withEvent:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1206,24 +1002,7 @@
             startingLineNumber = "3331"
             endingLineNumber = "3331"
             landmarkName = "-setViewRun:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "589DAEEC-6F29-4754-B3FC-54066FE88C5E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/SelectLevelViewController.m"
-            timestampString = "461673062.548291"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "-alertView:clickedButtonAtIndex:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1240,75 +1019,7 @@
             startingLineNumber = "1795"
             endingLineNumber = "1795"
             landmarkName = "-touchesBegan:withEvent:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "33B8B27E-D1F9-4278-AD43-183F6D194699"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/ViewController.m"
-            timestampString = "458790376.533466"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "268"
-            endingLineNumber = "268"
-            landmarkName = "-showRankViewController"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4A8A6517-AFA8-4730-AC25-9696699C7E84"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/GameCenterUtil.m"
-            timestampString = "456054189.843779"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "-authenticateLocalUser:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "015497EF-B8F8-48E5-A3E6-D37F472BDC09"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/GameCenterUtil.m"
-            timestampString = "456113965.936886"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "-authenticateLocalUser:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "05C77411-B3AE-4DD9-B724-C38ACFD90C4D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/GameCenterUtil.m"
-            timestampString = "456113965.936886"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "-authenticateLocalUser:"
-            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1325,7 +1036,7 @@
             startingLineNumber = "155"
             endingLineNumber = "155"
             landmarkName = "-showGameCenter:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1341,76 +1052,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2883"
             endingLineNumber = "2883"
-            landmarkName = "@implementation MyScene"
+            landmarkName = "MyScene"
             landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E75C410F-5C80-4B0D-8D90-7A15D5062D55"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/GameCenterUtil.m"
-            timestampString = "456054189.843779"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "-authenticateLocalUser:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DAE0ADC8-638E-4DFE-A40D-A5B76551BE89"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/GameCenterUtil.m"
-            timestampString = "456054262.082597"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "-authenticateLocalUser:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  uuid = "DAE0ADC8-638E-4DFE-A40D-A5B76551BE89 - c82ecbe95890fd38"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[GameCenterUtil authenticateLocalUser:]"
-                  moduleName = "Try_Cat_Shoot"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/irons/Desktop/Try_Cat_Shoot%202/Try_Cat_Shoot/GameCenterUtil.m"
-                  timestampString = "458791163.35004"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "120">
-               </Location>
-               <Location
-                  uuid = "DAE0ADC8-638E-4DFE-A40D-A5B76551BE89 - 9137d956a073c9a0"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__40-[GameCenterUtil authenticateLocalUser:]_block_invoke"
-                  moduleName = "Try_Cat_Shoot"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/irons/Desktop/Try_Cat_Shoot%202/Try_Cat_Shoot/GameCenterUtil.m"
-                  timestampString = "458791163.350301"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "72">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1427,7 +1070,7 @@
             startingLineNumber = "1143"
             endingLineNumber = "1143"
             landmarkName = "-updateWithTimeSinceLastUpdate:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1444,7 +1087,7 @@
             startingLineNumber = "1147"
             endingLineNumber = "1147"
             landmarkName = "-updateWithTimeSinceLastUpdate:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1461,40 +1104,6 @@
             startingLineNumber = "1151"
             endingLineNumber = "1151"
             landmarkName = "-updateWithTimeSinceLastUpdate:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "441AA013-961C-44DE-999D-907CA3E43B84"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/ViewController.m"
-            timestampString = "458790376.533466"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "298"
-            endingLineNumber = "298"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "13829DE9-CFC3-4796-AE1D-660F90262661"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/ViewController.m"
-            timestampString = "458790376.533466"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
-            landmarkName = "-layoutAnimated:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1512,24 +1121,7 @@
             startingLineNumber = "3349"
             endingLineNumber = "3349"
             landmarkName = "-setViewRun:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EB9B7570-A908-4A6A-8396-E9B61A53E9AF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/SelectLevelViewController.m"
-            timestampString = "461673062.548291"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "-checkContinueGame"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1546,24 +1138,7 @@
             startingLineNumber = "3148"
             endingLineNumber = "3148"
             landmarkName = "-checkShowGameHintAndStartGame"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "48BA2958-C6F6-4FBA-A35F-9558AF1F68E8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/BuyViewController.m"
-            timestampString = "461324261.856393"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "-paymentQueueRestoreCompletedTransactionsFinished:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1577,128 +1152,9 @@
             timestampString = "461324261.856393"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "-paymentQueue:updatedTransactions:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7520BBAA-6D35-4054-8647-3B4752CCE2C3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/BuyViewController.m"
-            timestampString = "461324261.856393"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
-            landmarkName = "-doRemoveAds"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BE859EA0-9603-4210-B75D-377AADED5CA8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/BuyViewController.m"
-            timestampString = "461324261.856393"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "-paymentQueue:restoreCompletedTransactionsFailedWithError:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "52176726-422D-480C-BE53-D450E289604F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/BuyViewController.m"
-            timestampString = "461324261.856393"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "-restore"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CFF2E277-F249-404D-9DD0-5B58F2172489"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/BuyViewController.m"
-            timestampString = "461324261.856393"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "-purchase:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D226D6FC-ECC2-4C86-AC2B-95B38B370A82"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/BuyViewController.m"
-            timestampString = "461324261.856393"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "-productsRequest:didReceiveResponse:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "690E51C1-73D6-441F-BB9B-A83005168D16"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/BuyViewController.m"
-            timestampString = "461324261.856393"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "-tapsRemoveAdsButton"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3427BF83-D8E7-4B5B-8A8E-141F25504507"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Try_Cat_Shoot/ViewController.m"
-            timestampString = "458791162.942933"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1716,7 +1172,7 @@
             startingLineNumber = "3094"
             endingLineNumber = "3094"
             landmarkName = "-resetGameAndGoTOFirstLevel:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1733,7 +1189,7 @@
             startingLineNumber = "1042"
             endingLineNumber = "1042"
             landmarkName = "-updateWithTimeSinceLastUpdate:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1750,7 +1206,7 @@
             startingLineNumber = "3093"
             endingLineNumber = "3093"
             landmarkName = "-resetGameAndGoTOFirstLevel:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

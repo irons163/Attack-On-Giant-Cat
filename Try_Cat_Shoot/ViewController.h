@@ -12,20 +12,16 @@
 #import "GameOverViewController.h"
 #import "GameHintViewController.h"
 
-@import iAd;
 @import GoogleMobileAds;
-//@class ViewController; 
-
-
 
 @protocol pauseGameDelegate <NSObject>
+
 - (void)pauseGame;
+
 @end
 
-@interface ViewController : UIViewController<BviewControllerDelegate, GameHintDelegate, GADInterstitialDelegate, pauseGameDelegate, ADBannerViewDelegate>
+@interface ViewController : UIViewController<BviewControllerDelegate, GameHintDelegate, GADInterstitialDelegate, pauseGameDelegate>
 
-//@property (nonatomic, weak) id <BviewControllerDelegate> delegate;
-
--(void)removeAd;
+- (void)removeAd;
 
 @end

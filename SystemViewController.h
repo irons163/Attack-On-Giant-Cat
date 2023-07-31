@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SystemViewController : UIViewController
+
 - (IBAction)authorTeamClick:(id)sender;
 - (IBAction)backClick:(id)sender;
 

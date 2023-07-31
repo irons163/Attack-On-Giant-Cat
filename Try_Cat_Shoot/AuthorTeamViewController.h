@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AuthorTeamViewController : UIViewController
+
 - (IBAction)backClick:(id)sender;
 
 @end

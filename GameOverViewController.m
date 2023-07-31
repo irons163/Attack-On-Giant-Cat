@@ -16,8 +16,7 @@
 
 @implementation GameOverViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -25,11 +24,8 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-//    self.gameLevelTensDigitalLabel.image = [TextureHelper timeTextures][0];
     
     self.gameLevelTensDigitalLabel.image = [self getNumberImage:(self.gameLevel+1)/10];
     
@@ -44,41 +40,20 @@
     self.gameClearedBallLabel.text = [NSString stringWithFormat:@"%d", self.clearedHands];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (IBAction)restartGameClick:(id)sender {
     [self dismissViewControllerAnimated:true completion:^{
-//        [self ];
-//        [self.delegate BviewcontrollerDidTapButton];
         [self.delegate BviewcontrollerDidTapButton];
     }];
 }
 
 - (IBAction)backToMainMenuClick:(id)sender {
     [self dismissViewControllerAnimated:true completion:^{
-        //        [self ];
-        //        [self.delegate BviewcontrollerDidTapButton];
         [self.delegate BviewcontrollerDidTapBackToMenuButton];
     }];
 }
 
--(UIImage*)getNumberImage:(int)number{
-    UIImage* image;
+- (UIImage *)getNumberImage:(int)number {
+    UIImage *image;
     switch (number) {
         case 0:
             image = [TextureHelper timeImages][0];

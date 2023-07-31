@@ -15,17 +15,6 @@ static CommonUtil* instance;
 
 - (id)init {
     if (self=[super init]) {
-//        self.screenWidth;
-//        int screenHeight;
-//        int statusBarHeight;
-//        int adBarHeight;
-//        int labaStickWidth;
-//        int labaStickHeight;
-//        int labaStickBlockHeight;
-//        int labaViewMarginWidth;
-//        int labaViewWidth;
-//        int labaViewHeight;
-//        int labaOffsetX;
         self.isPurchased = false;
         self.isBillDebug = true;
     }
@@ -40,28 +29,19 @@ static CommonUtil* instance;
     return instance;
 }
 
-//+(int) getStatusBarHeight{
-//    int result = 0;
-//    int resourceId = activity.getResources().getIdentifier("status_bar_height", "dimen", "android");
-//    if(resourceId > 0){
-//        result = activity.getResources().getDimensionPixelSize(resourceId);
-//    }
-//    return result;
-//}
-
-+(bool) isConnected{
++ (bool)isConnected {
     Reachability *reachability = [Reachability reachabilityForInternetConnection];
     
     NetworkStatus status = [reachability currentReachabilityStatus];
-    if(status == NotReachable){
+    if (status == NotReachable) {
         return false;
-    }else{
+    } else {
         return true;
     }
-
+    
 }
 
-+(void)resetGameRecoder:(CommonUtil*)commonUtil{
++ (void)resetGameRecoder:(CommonUtil *)commonUtil {
     commonUtil.recordGameLevel = 0;
     [[NSUserDefaults standardUserDefaults] setInteger:commonUtil.recordGameLevel forKey:@"currentLevel"];
     [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"currentGameTime"];
@@ -69,9 +49,7 @@ static CommonUtil* instance;
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-+ (NSString *)timeFormatted:(int)totalSeconds
-{
-    
++ (NSString *)timeFormatted:(int)totalSeconds {
     int seconds = totalSeconds % 60;
     int minutes = (totalSeconds / 60) % 60;
     int hours = totalSeconds / 3600;

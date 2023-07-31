@@ -16,8 +16,7 @@
 
 @implementation GameHintViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -25,11 +24,10 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    self.gameLevelTensDigitalLabel.image = [TextureHelper timeTextures][0];
+    //    self.gameLevelTensDigitalLabel.image = [TextureHelper timeTextures][0];
     
     self.gameLevelTensDigitalLabel.image = [self getNumberImage:(self.gameLevel+1)/10];
     
@@ -41,25 +39,7 @@
     self.gameTimeSecondSingleDigitalLabel.image = [self getNumberImage:self.gameTime%60%10];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-
--(UIImage*)getNumberImage:(int)number{
+- (UIImage *)getNumberImage:(int)number {
     UIImage* image;
     switch (number) {
         case 0:
@@ -96,7 +76,7 @@
     return image;
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self dismissViewControllerAnimated:true completion:^{
         [self.delegate GameHintDismissTouch];
     }];

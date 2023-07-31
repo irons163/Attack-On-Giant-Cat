@@ -8,17 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-//@class ViewController;
-//@class BviewControllerDelegate;
-
 @protocol GameHintDelegate <NSObject>
+
 - (void)GameHintDismissTouch;
+
 @end
 
 @interface GameHintViewController : UIViewController
 
 @property int gameLevel;
-
 @property int gameTime;
 
 @property (strong, nonatomic) IBOutlet UIImageView *gameLevelTensDigitalLabel;
@@ -32,7 +30,5 @@
 - (IBAction)backToMainMenuClick:(id)sender;
 
 @property (nonatomic, weak) id <GameHintDelegate> delegate;
-
-//@property (nonatomic, weak) ViewController* viewController;
 
 @end
